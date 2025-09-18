@@ -1,24 +1,29 @@
 
-export default function Sidebar({ categories, onSelectCategory, selectedCategory }) {
+import { Link } from "react-router-dom";
+
+export default function SideBar({ categories, selectedCategory }) {
 
     return (
         <>
-            <aside className="sidebar">
+            <aside className="sideBar">
                 <h3>Categories</h3>
                 <ul>
-                    <li
-                        className={selectedCategory === null ? "active" : ""}
-                        onClick={() => onSelectCategory(null)}
-                    >
-                        all
+                    <li>
+                        <Link
+                            to="/"
+                            className={selectedCategory === null ? "active" : ""}
+                        >
+                            all
+                        </Link>
                     </li>
                     {categories.map(category => (
-                        <li
-                            key={category}
-                            className={selectedCategory === category ? "active" : ""}
-                            onClick={() => onSelectCategory(category)}
-                        >
-                            {category}
+                        <li key={category}>
+                            <Link
+                                to={`/category/${category}`}
+                                className={selectedCategory === category ? "active" : ""}
+                            >
+                                {category}
+                            </Link>
                         </li>
                     ))}
                 </ul>

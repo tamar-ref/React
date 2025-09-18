@@ -1,10 +1,9 @@
-import './App.css';
-import WebSite from './components/2/Website';
+import Website from './components/2/Website';
 
 function App() {
   return (
     <>
-      <WebSite />
+      <Website/>
     </>
   );
 }
