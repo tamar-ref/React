@@ -2,7 +2,7 @@ export default function Header() {
 
     return (
         <>
-            <header className="header">
+            <header>
                 <div className="logo">🍲 My Recipes</div>
             </header>
         </>

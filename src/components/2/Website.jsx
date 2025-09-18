@@ -27,9 +27,14 @@ export default function Website() {
         <>
             <div className="app">
                 <Header />
-                <div className="main-layout">
-                    <Sidebar categories={categories} onSelectCategory={setSelectedCategory} />
-                    <ContentArea recipes={recipes} selectedCategory={selectedCategory} />
+                <div className="main">
+                    <Sidebar
+                        categories={categories}
+                        onSelectCategory={setSelectedCategory}
+                        selectedCategory={selectedCategory} />
+                    <ContentArea
+                        recipes={recipes}
+                        selectedCategory={selectedCategory} />
                 </div>
                 <Footer />
             </div>
