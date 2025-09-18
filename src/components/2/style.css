@@ -1,0 +1,95 @@
+/* website */
+
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main-layout {
+  display: flex;
+  flex: 1;
+}
+
+/* header */
+
+.header {
+  background: #ff8c69;
+  color: white;
+  padding: 1rem 2rem;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+/* sidebar */
+
+.sidebar {
+  background: #e9e9e9;
+  padding: 20px;
+  width: 200px;
+  /*position: fixed;*/
+}
+
+.sidebar h3 {
+  margin-bottom: 1rem;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar li {
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.sidebar li:hover {
+  font-weight: bold;
+}
+
+/* content area */
+
+.content-area {
+  flex: 1;
+  padding: 1rem;
+}
+
+.recipes-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.recipe-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 0.5rem;
+  background: white;
+}
+
+.recipe-card img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.recipe-card h4 {
+  margin: 0.5rem 0 0.2rem;
+}
+
+.recipe-card p {
+  font-size: 0.9rem;
+}
+
+/* footer */
+
+.footer {
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+}
