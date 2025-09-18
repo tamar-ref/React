@@ -12,13 +12,13 @@ export default function Sidebar({ categories, onSelectCategory, selectedCategory
                     >
                         all
                     </li>
-                    {categories.map(cat => (
+                    {categories.map(category => (
                         <li
-                            key={cat}
-                            className={selectedCategory === cat ? "active" : ""}
-                            onClick={() => onSelectCategory(cat)}
+                            key={category}
+                            className={selectedCategory === category ? "active" : ""}
+                            onClick={() => onSelectCategory(category)}
                         >
-                            {cat}
+                            {category}
                         </li>
                     ))}
                 </ul>

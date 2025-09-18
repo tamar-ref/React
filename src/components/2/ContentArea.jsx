@@ -1,7 +1,7 @@
 export default function ContentArea({ recipes, selectedCategory }) {
 
     const filteredRecipes = selectedCategory
-        ? recipes.filter(r => r.mealType && r.mealType.includes(selectedCategory))
+        ? recipes.filter(r => r.mealType?.includes(selectedCategory))
         : recipes;
 
     return (

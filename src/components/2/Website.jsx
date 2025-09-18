@@ -17,9 +17,7 @@ export default function Website() {
             .then(res => res.json())
             .then(data => {
                 setRecipes(data.recipes);
-                const allCategories = data.recipes.flatMap(r => r.mealType || []);
-                const uniqueCategories = Array.from(new Set(allCategories));
-                setCategories(uniqueCategories);
+                setCategories([...new Set(data.recipes.flatMap(({ mealType = [] }) => mealType))]);
             });
     }, []);
 
