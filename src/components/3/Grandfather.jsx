@@ -2,7 +2,6 @@ import { useState } from "react"
 
 import ChildA from "./ChildA"
 import ChildB from "./ChildB"
-import './style.css'
 
 export default function Grandfather() {
 

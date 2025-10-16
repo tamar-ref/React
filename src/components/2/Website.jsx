@@ -5,7 +5,6 @@ import Header from "./Header";
 import SideBar from "./SideBar";
 import ContentArea from "./ContentArea";
 import Footer from "./Footer";
-import './style.css';
 
 export default function Website() {
     const [recipes, setRecipes] = useState([]);

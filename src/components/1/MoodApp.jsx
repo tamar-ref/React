@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import './MoodApp.css'
 
 export default function MoodApp() {
   const [happyCount, setHappyCount] = useState(0);

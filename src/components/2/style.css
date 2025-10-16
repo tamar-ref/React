@@ -41,19 +41,19 @@ header {
   padding: 0;
 }
 
-.sideBar a{
+.sideBar a {
   margin-bottom: 10px;
   cursor: pointer;
-  text-decoration: none;  
+  text-decoration: none;
   color: black;
-  display: block;         
+  display: block;
 }
 
-.sideBar a:hover{
+.sideBar a:hover {
   font-weight: bold;
 }
 
-.sideBar a.active{
+.sideBar a.active {
   color: #ff8c69;
   font-weight: bold;
 }
